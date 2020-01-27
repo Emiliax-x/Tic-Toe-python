@@ -13,7 +13,7 @@ def display_board(board):  #STEP 1
     print('-- --')
     print(board[1] + '|' + board[2] + '|' + board[3])
     if ' ' in board:
-      return 'next turn'
+        return 'next turn'
 
 #Funcion correcta
 
@@ -22,7 +22,7 @@ def player_input():    #STEP 2
     while count == 0:
         player_1 = input('Hello! Choose a X or O: ')
         if player_1 == 'X' or player_1 == 'O':
-          count += 1
+            count += 1
     if player_1 == 'X':
         player_2 = 'O'
     else:
@@ -69,7 +69,7 @@ def  player_choice (board):   #STEP 7
         if space == True:
             count += 1
         else:
-          print('Ups, this position is already occupied, choice another one')
+            print('Ups, this position is already occupied, choice another one')
     return position
         
 #Funcion correcta
@@ -118,4 +118,3 @@ while game == 0:
         pass
     else:
         game += 1
-
